@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>DBアクセス</title>
+</head>
+<body>
+<table border="1" th:if="${item != null}">
+<tr>
+	<th>コード</th><th>名前</th><th>単価</th>
+</tr>
+<tr>
+	<td th:text="${item.code}"></td>
+	<td th:text="${item.name}"></td>
+	<td th:text="${item.price}"></td>
+</tr>
+</table>
+<div th:if="${item == null}">レコードがありません。</div>
+</body>
+</html>

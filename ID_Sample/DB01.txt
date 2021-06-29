@@ -1,0 +1,30 @@
+CREATE DATABASE id_db;
+
+CREATE TABLE Users(
+id INTEGER PRIMARY KEY,
+name TEXT
+);
+
+INSERT INTO Users VALUES(1, '山田太郎');
+INSERT INTO Users VALUES(2, '佐藤花子');
+INSERT INTO Users VALUES(3, '鈴木次郎');
+
+CREATE TABLE Customers(
+id SERIAL PRIMARY KEY,
+name TEXT
+);
+
+INSERT INTO Customers(name) VALUES('山本太郎');
+INSERT INTO Customers(name) VALUES('小田花子');
+INSERT INTO Customers(name) VALUES('伊藤次郎');
+
+CREATE TABLE Items(
+code INTEGER PRIMARY KEY,
+name TEXT,
+price INTEGER
+);
+
+INSERT INTO Items VALUES(1, 'りんご', 200);
+INSERT INTO Items VALUES(2, 'みかん', 300);
+INSERT INTO Items VALUES(3, 'ぶどう', 800);
+INSERT INTO Items VALUES(4, 'いちご', 500);
